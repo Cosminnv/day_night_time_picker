@@ -12,7 +12,7 @@ class AmPm extends StatelessWidget {
   Widget build(BuildContext context) {
     var timeState = TimeModelBinding.of(context);
     final isAm = timeState.time.period == DayPeriod.am;
-    const unselectedOpacity = 1;
+    const unselectedOpacity = 1.0;
 
     final shouldDisablePM = !timeState.checkIfWithinRange(DayPeriod.pm);
     final shouldDisableAM = !timeState.checkIfWithinRange(DayPeriod.am);
